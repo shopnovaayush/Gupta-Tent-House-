@@ -1,4 +1,3 @@
-
 /**
  * GUPTA TENT HOUSE — Brand Constants
  * Single source of truth for all brand-related data.
@@ -47,7 +46,7 @@ export const NAV_LINKS = [
 export const SERVICES = [
   {
     id: "tents-shamianas",
-    icon: "🏕️",
+    icon: "tent",
     title: "Tents & Shamianas",
     description:
       "Grand shamianas, AC tents, transparent marquees, and traditional mandap setups for weddings and large gatherings.",
@@ -55,7 +54,7 @@ export const SERVICES = [
   },
   {
     id: "seating-furniture",
-    icon: "🪑",
+    icon: "chair",
     title: "Chairs & Tables",
     description:
       "Banquet chairs, plastic chairs, round tables, dining tables — available in bulk for 100 to 10,000+ guests.",
@@ -63,7 +62,7 @@ export const SERVICES = [
   },
   {
     id: "lighting-decoration",
-    icon: "💡",
+    icon: "light",
     title: "Lighting & Décor",
     description:
       "Fairy lights, LED panels, flower decoration, stage backdrop, entrance arches and full venue dressing.",
@@ -71,7 +70,7 @@ export const SERVICES = [
   },
   {
     id: "catering-equipment",
-    icon: "🍽️",
+    icon: "catering",
     title: "Catering Equipment",
     description:
       "Buffet counters, chafing dishes, serving utensils, crockery and cooking equipment on rent.",
@@ -79,7 +78,7 @@ export const SERVICES = [
   },
   {
     id: "sound-stage",
-    icon: "🎤",
+    icon: "sound",
     title: "Sound & Stage",
     description:
       "Professional sound systems, DJ consoles, stage platforms and podiums for all event sizes.",
@@ -87,7 +86,7 @@ export const SERVICES = [
   },
   {
     id: "flooring-carpets",
-    icon: "🟥",
+    icon: "carpet",
     title: "Flooring & Carpets",
     description:
       "Red carpets, modular flooring, grass matting and premium carpet rolls for indoor and outdoor venues.",
