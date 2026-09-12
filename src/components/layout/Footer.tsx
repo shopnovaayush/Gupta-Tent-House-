@@ -20,7 +20,7 @@ export function Footer() {
               Ready to Plan Your Event?
             </h3>
             <p className="text-brand-200 text-sm">
-              Call us today for a free quote — we serve Indore & surrounding districts.
+              Call us today for a free quote — we serve Barabanki & surrounding districts.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
@@ -68,7 +68,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-neutral-400 leading-relaxed">
-              {BRAND.tagline} — Making every celebration memorable for over 25 years in Indore.
+              {BRAND.tagline} — Making every celebration memorable for over 15 years in Barabanki.
             </p>
             {/* Social links */}
             <div className="flex gap-3">
@@ -164,7 +164,7 @@ export function Footer() {
       <div className="border-t border-neutral-800">
         <div className="container-site py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-500">
           <p>© {year} {BRAND.name}. All rights reserved.</p>
-          <p>Made with ❤️ in Indore, Madhya Pradesh</p>
+          <p>Made with ❤️ in Barabanki, Uttar Pradesh</p>
         </div>
       </div>
     </footer>
