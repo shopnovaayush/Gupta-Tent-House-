@@ -15,6 +15,8 @@ export interface NavLink {
 export interface Service {
   id: string;
   icon: string;
+  /** Real photo URL for this service. Null until real photography is available. */
+  image: string | null;
   title: string;
   description: string;
   tags: readonly string[];
