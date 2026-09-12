@@ -41,7 +41,7 @@ export function HeroSection() {
           {/* Eyebrow badge */}
           <div className="mb-6">
             <Badge variant="brand" dot>
-              Est. {BRAND.established} · Trusted in MP
+              Est. {BRAND.established} · Trusted in UP
             </Badge>
           </div>
 
