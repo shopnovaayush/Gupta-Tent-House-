@@ -14,7 +14,7 @@ export function HeroSection() {
     <SectionWrapper
       id="home"
       padded={false}
-      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-neutral-900 via-brand-950 to-neutral-900"
+      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-neutral-900 via-maroon-950 to-neutral-900"
     >
       {/* Decorative background pattern */}
       <div
@@ -34,7 +34,7 @@ export function HeroSection() {
 
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" aria-hidden="true" />
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-brand-900/20 to-transparent" aria-hidden="true" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-maroon-900/20 to-transparent" aria-hidden="true" />
 
       <div className="container-site relative z-10 py-32 md:py-40">
         <div className="max-w-3xl">
@@ -83,7 +83,7 @@ export function HeroSection() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             {STATS.map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
-                <div className="font-display text-3xl md:text-4xl text-brand-400 font-bold">
+                <div className="font-display text-3xl md:text-4xl text-maroon-400 font-bold">
                   {stat.value}
                 </div>
                 <div className="text-neutral-400 text-xs md:text-sm mt-1">
