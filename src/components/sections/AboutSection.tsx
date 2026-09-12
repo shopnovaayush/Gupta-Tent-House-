@@ -14,7 +14,7 @@ export function AboutSection() {
       <SectionHeading
         eyebrow="Our Story"
         title="About Gupta Tent House"
-        subtitle={`Serving families across Madhya Pradesh since ${BRAND.established} — with love, quality, and commitment.`}
+        subtitle={`Serving families across Uttar Pradesh since ${BRAND.established} — with love, quality, and commitment.`}
         titleClassName="text-white"
       />
 
@@ -30,8 +30,8 @@ export function AboutSection() {
       <div className="max-w-3xl mx-auto text-center space-y-4 text-neutral-300 text-base leading-relaxed">
         <p>
           Founded by the Gupta family in {BRAND.established}, we started with a small set of shamianas and
-          a big dream — to make every celebration in Indore truly special. Today, we are a trusted name
-          across Madhya Pradesh.
+          a big dream — to make every celebration in Barabanki truly special. Today, we are a trusted name
+          across Uttar Pradesh.
         </p>
         <p>
           Our team of experienced professionals handles everything from delivery and setup to complete event
