@@ -60,7 +60,7 @@ export function ContactSection() {
                 href={BRAND.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 text-brand-600 text-sm font-medium hover:underline"
+                className="inline-block mt-2 text-maroon-600 text-sm font-medium hover:underline"
               >
                 Open in Google Maps →
               </a>
