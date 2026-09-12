@@ -8,6 +8,7 @@
 
 export const BRAND = {
   name: "Gupta Tent House",
+  proprietor: "Rakesh Gupta",
   tagline: "Har Khushi Ko Banaayein Yaadgaar",
   taglineEn: "Making Every Celebration Memorable",
   established: 2010,
