@@ -34,9 +34,10 @@ export const BRAND = {
 
 export const NAV_LINKS = [
   { label: "Home",       href: "#home" },
+  { label: "Events",     href: "#events" },
   { label: "Services",   href: "#services" },
-  { label: "Gallery",    href: "#gallery" },
   { label: "Packages",   href: "#packages" },
+  { label: "Gallery",    href: "#gallery" },
   { label: "About",      href: "#about" },
   { label: "Contact",    href: "#contact" },
 ] as const;
