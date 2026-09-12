@@ -15,7 +15,7 @@ export function GallerySection() {
       <SectionHeading
         eyebrow="Our Work"
         title="Event Gallery"
-        subtitle="A glimpse of the beautiful events we have set up across Indore and Madhya Pradesh."
+        subtitle="A glimpse of the beautiful events we have set up across Barabanki and Uttar Pradesh."
       />
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
