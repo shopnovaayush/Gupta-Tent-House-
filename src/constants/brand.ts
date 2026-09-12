@@ -10,7 +10,7 @@ export const BRAND = {
   name: "Gupta Tent House",
   tagline: "Har Khushi Ko Banaayein Yaadgaar",
   taglineEn: "Making Every Celebration Memorable",
-  established: 1998,
+  established: 2010,
   phone: "9839821521",
   phoneAlt: "+91 94250 XXXXX",
   email: "info@guptatent.in",
@@ -47,7 +47,9 @@ export const NAV_LINKS = [
 export const SERVICES = [
   {
     id: "tents-shamianas",
-    icon: "tent",
+    icon: "🏕️",
+    // TODO: replace with a real tent/shamiana setup photo when available
+    image: null,
     title: "Tents & Shamianas",
     description:
       "Grand shamianas, AC tents, transparent marquees, and traditional mandap setups for weddings and large gatherings.",
@@ -55,7 +57,9 @@ export const SERVICES = [
   },
   {
     id: "seating-furniture",
-    icon: "chair",
+    icon: "🪑",
+    // TODO: replace with a real banquet chairs/tables photo when available
+    image: null,
     title: "Chairs & Tables",
     description:
       "Banquet chairs, plastic chairs, round tables, dining tables — available in bulk for 100 to 10,000+ guests.",
@@ -63,7 +67,9 @@ export const SERVICES = [
   },
   {
     id: "lighting-decoration",
-    icon: "light",
+    icon: "✨",
+    // TODO: replace with a real stage lighting/décor photo when available
+    image: null,
     title: "Lighting & Décor",
     description:
       "Fairy lights, LED panels, flower decoration, stage backdrop, entrance arches and full venue dressing.",
@@ -71,7 +77,9 @@ export const SERVICES = [
   },
   {
     id: "catering-equipment",
-    icon: "catering",
+    icon: "🍽️",
+    // TODO: replace with a real buffet/catering equipment photo when available
+    image: null,
     title: "Catering Equipment",
     description:
       "Buffet counters, chafing dishes, serving utensils, crockery and cooking equipment on rent.",
@@ -79,7 +87,9 @@ export const SERVICES = [
   },
   {
     id: "sound-stage",
-    icon: "sound",
+    icon: "🎧",
+    // TODO: replace with a real DJ/sound & stage photo when available
+    image: null,
     title: "Sound & Stage",
     description:
       "Professional sound systems, DJ consoles, stage platforms and podiums for all event sizes.",
@@ -87,7 +97,9 @@ export const SERVICES = [
   },
   {
     id: "flooring-carpets",
-    icon: "carpet",
+    icon: "🧱",
+    // TODO: replace with a real flooring/carpet photo when available
+    image: null,
     title: "Flooring & Carpets",
     description:
       "Red carpets, modular flooring, grass matting and premium carpet rolls for indoor and outdoor venues.",
@@ -171,7 +183,7 @@ export const TESTIMONIALS = [
       "Gupta Tent House ne hamaari shaadi ko sapno jaisi bana diya. Decoration ekdam zabardast tha aur staff bahut helpful tha!",
     quoteEn:
       "Gupta Tent House made our wedding feel like a dream. The decoration was spectacular and the staff was incredibly helpful!",
-    location: "Indore",
+    location: "Barabanki",
   },
   {
     id: 2,
@@ -182,7 +194,7 @@ export const TESTIMONIALS = [
       "10 saal se inhi ke saath kaam karte hain. Quality aur punctuality dono mein number one hain.",
     quoteEn:
       "We've worked with them for 10 years. They are number one in both quality and punctuality.",
-    location: "Dewas",
+    location: "Lucknow",
   },
   {
     id: 3,
@@ -193,14 +205,14 @@ export const TESTIMONIALS = [
       "Budget ke andar itna sundar setup — bilkul expect nahi kiya tha. Shukriya Gupta Tent House!",
     quoteEn:
       "Such a beautiful setup within budget — we did not expect this at all. Thank you Gupta Tent House!",
-    location: "Ujjain",
+    location: "Dewa Sharif",
   },
 ] as const;
 
 // ─── Stats / Social Proof ─────────────────────────────────────────────────────
 
 export const STATS = [
-  { value: "25+",   label: "Years of Experience" },
+  { value: "15+",   label: "Years of Experience" },
   { value: "5000+", label: "Events Completed" },
   { value: "50+",   label: "Cities Served" },
   { value: "98%",   label: "Happy Clients" },
