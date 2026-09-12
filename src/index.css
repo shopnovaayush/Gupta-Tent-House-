@@ -1,1 +1,233 @@
+@import "tailwindcss";
 
+/* ============================================================
+   GUPTA TENT HOUSE — Design Tokens (CSS Custom Properties)
+   SESSION 02 — Design System
+   ============================================================ */
+
+@theme {
+  /* --- Brand Palette: Maroon (primary) ---
+     Base: #6B1A2E, anchored at the 700 step. */
+  --color-maroon-50:  color-mix(in srgb, white 95%, #6B1A2E 5%);
+  --color-maroon-100: color-mix(in srgb, white 88%, #6B1A2E 12%);
+  --color-maroon-200: color-mix(in srgb, white 75%, #6B1A2E 25%);
+  --color-maroon-300: color-mix(in srgb, white 58%, #6B1A2E 42%);
+  --color-maroon-400: color-mix(in srgb, white 38%, #6B1A2E 62%);
+  --color-maroon-500: color-mix(in srgb, white 18%, #6B1A2E 82%);
+  --color-maroon-600: color-mix(in srgb, white 5%,  #6B1A2E 95%);
+  --color-maroon-700: #6B1A2E;
+  --color-maroon-800: color-mix(in srgb, black 15%, #6B1A2E 85%);
+  --color-maroon-900: color-mix(in srgb, black 30%, #6B1A2E 70%);
+  --color-maroon-950: color-mix(in srgb, black 45%, #6B1A2E 55%);
+  --color-maroon: #6B1A2E;
+
+  /* --- Brand Palette: Gold (accent) ---
+     Base: #C9A15A, anchored at the 500 step. */
+  --color-gold-50:  color-mix(in srgb, white 95%, #C9A15A 5%);
+  --color-gold-100: color-mix(in srgb, white 85%, #C9A15A 15%);
+  --color-gold-200: color-mix(in srgb, white 70%, #C9A15A 30%);
+  --color-gold-300: color-mix(in srgb, white 50%, #C9A15A 50%);
+  --color-gold-400: color-mix(in srgb, white 25%, #C9A15A 75%);
+  --color-gold-500: #C9A15A;
+  --color-gold-600: color-mix(in srgb, black 12%, #C9A15A 88%);
+  --color-gold-700: color-mix(in srgb, black 25%, #C9A15A 75%);
+  --color-gold-800: color-mix(in srgb, black 40%, #C9A15A 60%);
+  --color-gold-900: color-mix(in srgb, black 55%, #C9A15A 45%);
+  --color-gold-950: color-mix(in srgb, black 68%, #C9A15A 32%);
+  --color-gold: #C9A15A;
+
+  /* --- Neutral scale: Ivory (light) -> Charcoal (dark) ---
+     Interpolated between the two brand neutrals. */
+  --color-neutral-50:  #FBF6EE;
+  --color-neutral-100: color-mix(in srgb, #FBF6EE 90%, #1C1512 10%);
+  --color-neutral-200: color-mix(in srgb, #FBF6EE 78%, #1C1512 22%);
+  --color-neutral-300: color-mix(in srgb, #FBF6EE 62%, #1C1512 38%);
+  --color-neutral-400: color-mix(in srgb, #FBF6EE 45%, #1C1512 55%);
+  --color-neutral-500: color-mix(in srgb, #FBF6EE 30%, #1C1512 70%);
+  --color-neutral-600: color-mix(in srgb, #FBF6EE 20%, #1C1512 80%);
+  --color-neutral-700: color-mix(in srgb, #FBF6EE 12%, #1C1512 88%);
+  --color-neutral-800: color-mix(in srgb, #FBF6EE 6%,  #1C1512 94%);
+  --color-neutral-900: color-mix(in srgb, #FBF6EE 2%,  #1C1512 98%);
+  --color-neutral-950: #1C1512;
+  --color-ivory: #FBF6EE;
+  --color-charcoal: #1C1512;
+
+  /* --- Typography --- */
+  --font-sans:    "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+
+  /* --- Spacing scale extras --- */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-88: 22rem;
+  --spacing-128: 32rem;
+
+  /* --- Border radius --- */
+  --radius-4xl: 2rem;
+
+  /* --- Shadows (tinted with brand maroon) --- */
+  --shadow-warm-sm: 0 1px 3px 0 rgba(107, 26, 46, 0.12), 0 1px 2px -1px rgba(107, 26, 46, 0.08);
+  --shadow-warm:    0 4px 6px -1px rgba(107, 26, 46, 0.15), 0 2px 4px -2px rgba(107, 26, 46, 0.10);
+  --shadow-warm-lg: 0 10px 15px -3px rgba(107, 26, 46, 0.18), 0 4px 6px -4px rgba(107, 26, 46, 0.12);
+  --shadow-warm-xl: 0 20px 25px -5px rgba(107, 26, 46, 0.20), 0 8px 10px -6px rgba(107, 26, 46, 0.15);
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-neutral-50);
+  color: var(--color-neutral-900);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Headings use display font --- */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+/* --- Focus ring (accessible) --- */
+:focus-visible {
+  outline: 2px solid var(--color-maroon-500);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* --- Scrollbar styling --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-400);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-600);
+}
+
+/* --- Selection color --- */
+::selection {
+  background: var(--color-gold-200);
+  color: var(--color-maroon-900);
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Gradient text utility */
+.text-gradient-brand {
+  background: linear-gradient(135deg, var(--color-maroon-700), var(--color-gold-600));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Decorative divider */
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-gold-500);
+}
+.divider-ornament::before,
+.divider-ornament::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold-300));
+}
+.divider-ornament::after {
+  background: linear-gradient(to left, transparent, var(--color-gold-300));
+}
+
+/* Section padding helper */
+.section-py {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 1024px) {
+  .section-py {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* Container helper */
+.container-site {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-site {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Narrow container helper (for text-heavy content) */
+.container-narrow {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-narrow {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Warm card style */
+.card-warm {
+  background: #ffffff;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-warm-sm);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.card-warm:hover {
+  box-shadow: var(--shadow-warm-lg);
+  transform: translateY(-2px);
+}
